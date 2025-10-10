@@ -82,3 +82,9 @@ Usages
 [magic-methods]: https://www.php.net/manual/en/language.oop5.magic.php
 [dom]: https://www.php.gt/dom
 [write-once-property-rfc]: https://wiki.php.net/rfc/write_once_properties
+
+# Proudly sponsored by
+
+[JetBrains Open Source sponsorship program](https://www.jetbrains.com/community/opensource/)
+
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://www.jetbrains.com/community/opensource/)
