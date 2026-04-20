@@ -22,7 +22,7 @@ Why? This kind of functionality can certainly be seen as a hack, but sometimes h
 	<img src="https://badge.status.php.gt/propfunc-version.svg" alt="Current version" />
 </a>
 <a href="http://www.php.gt/propfunc" target="_blank">
-	<img src="https://badge.status.php.gt/propfunc-docs.svg" alt="PHP.Gt/PropFunc documentation" />
+	<img src="https://badge.status.php.gt/propfunc-docs.svg" alt="PHP.GT/PropFunc documentation" />
 </a>
 
 Example usage: Read-only properties that are calculated upon access
@@ -31,7 +31,7 @@ Example usage: Read-only properties that are calculated upon access
 See the class `Day` below, which represents a day in time:
 
 ```php
-use Gt\PropFunc\MagicProp;
+use GT\PropFunc\MagicProp;
 
 /**
  * @property-read bool $future True if the day is in the future

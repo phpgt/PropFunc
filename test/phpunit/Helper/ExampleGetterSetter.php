@@ -1,7 +1,7 @@
 <?php
-namespace Gt\PropFunc\Test\Helper;
+namespace GT\PropFunc\Test\Helper;
 
-use Gt\PropFunc\MagicProp;
+use GT\PropFunc\MagicProp;
 
 /**
  * @property ?string $internalProperty An example property that is stored

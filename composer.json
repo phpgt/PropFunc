@@ -25,12 +25,14 @@
 
 	"autoload": {
 		"psr-4": {
+			"GT\\PropFunc\\": "./src",
 			"Gt\\PropFunc\\": "./src"
 		}
 	},
 
 	"autoload-dev": {
 		"psr-4": {
+			"GT\\PropFunc\\Test\\": "./test/phpunit",
 			"Gt\\PropFunc\\Test\\": "./test/phpunit"
 		}
 	},

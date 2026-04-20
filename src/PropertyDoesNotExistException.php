@@ -1,4 +1,4 @@
 <?php
-namespace Gt\PropFunc;
+namespace GT\PropFunc;
 
 class PropertyDoesNotExistException extends PropFuncException {}

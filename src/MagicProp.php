@@ -1,5 +1,5 @@
 <?php
-namespace Gt\PropFunc;
+namespace GT\PropFunc;
 
 use ReflectionProperty;
 
