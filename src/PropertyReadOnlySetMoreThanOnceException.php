@@ -1,4 +1,4 @@
 <?php
-namespace Gt\PropFunc;
+namespace GT\PropFunc;
 
 class PropertyReadOnlySetMoreThanOnceException extends PropertyReadOnlyException {}

@@ -2,7 +2,10 @@
 
 Property accessors and mutators are commonly referred to as "getter" and "setter" functions. This library uses [PHP's Magic Methods][magic-methods] to easily hook up getter and setter functions that are exposed externally as normal properties, via the `MagicProp` trait.
 
-Why? This kind of functionality can certainly be seen as a hack, but sometimes hacks are necessary. Specifically PHP.Gt is implementing [the DOM standard in PHP][dom] which requires certain properties to have "live" or "readonly" functionality, which is only possible using magic __get and __set functions. This library simply holds the reusable behaviour for other repositories that require it.
+Why? This kind of functionality can certainly be seen as a hack, but sometimes hacks are necessary. Specifically PHP.GT is implementing [the DOM standard in PHP][dom] which requires certain properties to have "live" or "readonly" functionality, which is only possible using magic __get and __set functions, in the supported PHP versions. This library simply holds the reusable behaviour for other repositories that require it.
+
+> [!NOTE]
+> Since PHP 8.4, [object property hooks](https://www.php.net/manual/en/language.oop5.property-hooks.php) were introduced, which will eventually render this library obsolete.
 
 ***
 
@@ -19,7 +22,7 @@ Why? This kind of functionality can certainly be seen as a hack, but sometimes h
 	<img src="https://badge.status.php.gt/propfunc-version.svg" alt="Current version" />
 </a>
 <a href="http://www.php.gt/propfunc" target="_blank">
-	<img src="https://badge.status.php.gt/propfunc-docs.svg" alt="PHP.Gt/PropFunc documentation" />
+	<img src="https://badge.status.php.gt/propfunc-docs.svg" alt="PHP.GT/PropFunc documentation" />
 </a>
 
 Example usage: Read-only properties that are calculated upon access
@@ -28,7 +31,7 @@ Example usage: Read-only properties that are calculated upon access
 See the class `Day` below, which represents a day in time:
 
 ```php
-use Gt\PropFunc\MagicProp;
+use GT\PropFunc\MagicProp;
 
 /**
  * @property-read bool $future True if the day is in the future

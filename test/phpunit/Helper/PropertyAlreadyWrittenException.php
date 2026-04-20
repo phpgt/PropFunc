@@ -1,6 +1,6 @@
 <?php
-namespace Gt\PropFunc\Test\Helper;
+namespace GT\PropFunc\Test\Helper;
 
-use Gt\PropFunc\PropFuncException;
+use GT\PropFunc\PropFuncException;
 
 class PropertyAlreadyWrittenException extends PropFuncException {}

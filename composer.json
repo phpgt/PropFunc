@@ -4,12 +4,12 @@
 	"type": "library",
 
 	"require": {
-		"php": ">=8.0"
+		"php": ">=8.1"
 	},
 
 	"require-dev": {
-		"phpstan/phpstan": "^v1.8",
-		"phpunit/phpunit": "^v9.5"
+		"phpstan/phpstan": "^2.1",
+		"phpunit/phpunit": "^10.5"
 	},
 
 	"license": "MIT",
@@ -25,14 +25,25 @@
 
 	"autoload": {
 		"psr-4": {
+			"GT\\PropFunc\\": "./src",
 			"Gt\\PropFunc\\": "./src"
 		}
 	},
 
 	"autoload-dev": {
 		"psr-4": {
+			"GT\\PropFunc\\Test\\": "./test/phpunit",
 			"Gt\\PropFunc\\Test\\": "./test/phpunit"
 		}
+	},
+
+	"scripts": {
+		"phpunit": "vendor/bin/phpunit --configuration phpunit.xml",
+		"phpstan": "vendor/bin/phpstan analyse --level 6 src",
+		"test": [
+			"@phpunit",
+			"@phpstan"
+		]
 	},
 
 	"funding": [

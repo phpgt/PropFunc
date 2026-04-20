@@ -1,11 +1,11 @@
 <?php
-namespace Gt\PropFunc\Test;
+namespace GT\PropFunc\Test;
 
-use Gt\PropFunc\PropertyDoesNotExistException;
-use Gt\PropFunc\PropertyReadOnlyException;
-use Gt\PropFunc\Test\Helper\PropertyAlreadyWrittenException;
+use GT\PropFunc\PropertyDoesNotExistException;
+use GT\PropFunc\PropertyReadOnlyException;
+use GT\PropFunc\Test\Helper\PropertyAlreadyWrittenException;
 use PHPUnit\Framework\TestCase;
-use Gt\PropFunc\Test\Helper\ExampleGetterSetter;
+use GT\PropFunc\Test\Helper\ExampleGetterSetter;
 use StdClass;
 
 class GetterSetterTest extends TestCase {
