@@ -3,6 +3,7 @@ namespace Gt\PropFunc;
 
 use ReflectionProperty;
 
+/** @phpstan-ignore trait.unused */
 trait MagicProp {
 	/** @var array<string, mixed> */
 	protected array $__prop = [];
@@ -63,6 +64,8 @@ trait MagicProp {
 		string $name,
 		string $action = "get"
 	):string {
-		return "__prop_{$action}_{$name}";
+		$ucAction = ucfirst($action);
+		$ucName = ucfirst($name);
+		return "__prop{$ucAction}{$ucName}";
 	}
 }

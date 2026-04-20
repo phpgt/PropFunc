@@ -35,43 +35,43 @@ class ExampleGetterSetter {
 		$this->__prop["internalReadOnly"] = "this is read only";
 	}
 
-	private function __prop_get_constructedAt():int {
+	private function __propGetConstructedAt():int {
 		return $this->constructedAt;
 	}
 
-	private function __prop_get_ucName():string {
+	private function __propGetUcName():string {
 		return strtoupper($this->name);
 	}
 
-	private function __prop_get_age():int {
+	private function __propGetAge():int {
 		return time() - $this->constructedAt;
 	}
 
-	private function __prop_set_age(int $seconds):void {
+	private function __propSetAge(int $seconds):void {
 		$this->constructedAt = time() - $seconds;
 	}
 
-	private function __prop_get_id():int {
+	private function __propGetId():int {
 		return $this->id;
 	}
 
-	private function __prop_get_internalProperty():?string {
+	private function __propGetInternalProperty():?string {
 		return $this->__prop["internalProperty"] ?? null;
 	}
 
-	private function __prop_set_internalProperty(string $value):void {
+	private function __propSetInternalProperty(string $value):void {
 		$this->__prop["internalProperty"] = $value;
 	}
 
-	private function __prop_get_internalReadOnly():?string {
+	private function __propGetInternalReadOnly():?string {
 		return $this->__prop["internalReadOnly"];
 	}
 
-	private function __prop_get_writeMeOnce():?string {
+	private function __propGetWriteMeOnce():?string {
 		return $this->writeMeOnce ?? null;
 	}
 
-	private function __prop_set_writeMeOnce(string $value):void {
+	private function __propSetWriteMeOnce(string $value):void {
 		if(isset($this->writeMeOnce)) {
 			throw new PropertyAlreadyWrittenException("writeMeOnce");
 		}
@@ -79,11 +79,11 @@ class ExampleGetterSetter {
 		$this->writeMeOnce = $value;
 	}
 
-	private function __prop_get_internalWriteMeOnce():?string {
+	private function __propGetInternalWriteMeOnce():?string {
 		return $this->__prop["internalWriteMeOnce"] ?? null;
 	}
 
-	private function __prop_set_internalWriteMeOnce(string $value):void {
+	private function __propSetInternalWriteMeOnce(string $value):void {
 		if(isset($this->__prop["internalWriteMeOnce"])) {
 			throw new PropertyAlreadyWrittenException("writeMeOnce");
 		}

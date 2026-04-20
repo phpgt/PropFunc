@@ -2,7 +2,10 @@
 
 Property accessors and mutators are commonly referred to as "getter" and "setter" functions. This library uses [PHP's Magic Methods][magic-methods] to easily hook up getter and setter functions that are exposed externally as normal properties, via the `MagicProp` trait.
 
-Why? This kind of functionality can certainly be seen as a hack, but sometimes hacks are necessary. Specifically PHP.Gt is implementing [the DOM standard in PHP][dom] which requires certain properties to have "live" or "readonly" functionality, which is only possible using magic __get and __set functions. This library simply holds the reusable behaviour for other repositories that require it.
+Why? This kind of functionality can certainly be seen as a hack, but sometimes hacks are necessary. Specifically PHP.GT is implementing [the DOM standard in PHP][dom] which requires certain properties to have "live" or "readonly" functionality, which is only possible using magic __get and __set functions, in the supported PHP versions. This library simply holds the reusable behaviour for other repositories that require it.
+
+> [!NOTE]
+> Since PHP 8.4, [object property hooks](https://www.php.net/manual/en/language.oop5.property-hooks.php) were introduced, which will eventually render this library obsolete.
 
 ***
 
